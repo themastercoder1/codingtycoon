@@ -1,0 +1,270 @@
+*{
+  margin: 0%;
+  padding: 0%;
+  box-sizing:border-box;
+}
+html,body{
+  height: 100%; 
+  width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #D7CCD1;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#image{
+    position: absolute;
+    z-index: 99;
+    height: 80%;
+    width: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+#image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#text{
+    position: absolute;
+    font-family: monument;
+    font-size: 70px;
+    top: 25%;
+    left: 4.8%;
+    opacity: 0;
+    animation-name: anim1;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+#text1{
+    position: absolute;
+    font-family: monument;
+    z-index: 999;
+    font-size: 70px;
+    left: 4.8%;
+    top: 40%;
+    color: transparent;
+    -webkit-text-stroke: 1px #000;
+    opacity: 0;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 2.3s;
+}
+#text2{
+    position: absolute;
+    font-family: monument;
+    font-size: 70px;
+    top: 55%;
+    left: 4.8%;
+    opacity: 0;
+    animation-name: anim2;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+#text3{
+    position: absolute;
+    top: 3%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #9d8590;
+    font-family: gilroy;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    opacity: 0;
+    animation-name: anim3;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+#text4{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    font-family: gilroy;
+    font-size: 13px;
+    opacity: 0;
+    animation-name: anim3;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+#text5{
+    position: absolute;
+    bottom: 7%;
+    right: 5%;
+    font-family: gilroy;
+    opacity: 0;
+    animation-name: anim4;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+#text5 h5{
+    font-weight: 450;
+}
+#uline{
+  position: absolute;
+  width: 14.4%;
+  height: 1.4px;
+  background-color: #000;
+  bottom: 5%;
+  right: 5%;
+  opacity: 0;
+    animation-name: anim4;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+#text6{
+    position: absolute;
+    bottom: 4%;
+    left: 4%;
+    opacity: 0;
+    animation-name: anim4;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+#text6 h5{
+    font-weight: 450;
+    font-family: gilroy;
+    font-size: 12px;
+}
+#text7{
+    position: absolute;
+    padding: 120px 80px;
+    font-family: gilroy;
+    color: #8d7680;
+    opacity: 0;
+    animation-name: anim1;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+#text7 h6{  
+    color: #000; 
+}
+#text8{
+    position: absolute;
+    padding: 20px 35px;
+    font-family: gilroy;
+    opacity: 0;
+    animation-name: anim3;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+
+}
+#text8 h6{
+    font-size: 7px;
+    letter-spacing: 7px;
+    font-weight: 500;
+}
+#text9{
+    position: absolute;
+    white-space: nowrap;
+    top: 12%;
+    left: 26%;
+    z-index: 99999;
+    font-size: 22px;
+    text-align: center;
+    font-family: monument;
+    color: rgba(0, 0, 0, 0.508);
+    opacity: 0;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+}
+#text10{
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    font-family: monument;
+    opacity: 0;
+    animation-name: anim1;
+    animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+#text10 h4{
+    font-size: 14px;
+    letter-spacing: .5spx;
+    font-weight: 551;
+}
+@keyframes anim {
+    0%{
+        transform: translate(0%) scale(3);
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes anim1 {
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+    opacity: 1;
+    }
+}
+@keyframes anim2 {
+    from{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to{
+    opacity: 1;
+    }
+}
+@keyframes anim3 {
+    from{
+        transform: scale(3);
+        top: -10%;
+        opacity: 0;
+    }
+    to{
+    opacity: 1;
+    }
+}
+@keyframes anim4 {
+    from{
+        scale: 3;
+        bottom: -10%;
+        opacity: 0;
+    }
+    to{
+    opacity: 1;
+    }
+}
